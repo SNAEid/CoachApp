@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc=" http://schemas.openxmlformats.org/markup-compatibility/2006 "
+             xmlns:vm="clr-namespace:XF_LancheApp.view" xmlns:vm1="clr-namespace:XF_LancheApp.viewModel"
+             
+             x:Class="XF_LancheApp.view.LoginView"
+             BackgroundColor="White"
+             Title="Login">
+    <ContentPage.BindingContext>
+        <vm1:LoginViewModel />
+       
+    </ContentPage.BindingContext>
+    <Grid Padding="10" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" VerticalOptions="Center">
+           
+            <Label Text="Login" FontFamily="Verdana"
+                       TextColor="Orange" FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                   HeightRequest="500"
+                 />
+        </StackLayout>
+
+        <StackLayout  Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand"> 
+            <Image Source="lo.jpg"
+                       WidthRequest="150" HeightRequest="150" Visual="Material"/>
+            <Entry  Grid.Column="0" Placeholder="Username" Text=" {Binding Username}  " 
+ />
+            <Entry Placeholder="User Password" Text="{ Binding Password }" IsPassword="True"  HeightRequest="50" />
+            
+           
+            <Button
+                Command="{Binding LoginCommand}"
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="#F6FCFB"
+                BackgroundColor="Orange"
+                BorderWidth="1.5"
+                CornerRadius="20"
+                FontFamily="Roboto"
+                FontAttributes="Bold"
+                Margin="20"/>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
