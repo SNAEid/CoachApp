@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Coach.Views.LoginPageView"
+             Title="Login Page"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Label x:Name="ErrorMessage" TextColor="Red" 
+                   Text="{Binding ErrorMessage}"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+            <Label Text="Email"
+                   FontFamily="Roboto"/>
+
+            <Entry x:Name="Email" Placeholder="Email" 
+                   TextColor="Black" PlaceholderColor="#B6BAB9"
+                   Text="{Binding Email}"
+                   FontFamily="Roboto">
+            </Entry>
+
+            <Label Text="Password"
+                   FontFamily="Roboto"/>
+
+            <Entry x:Name="Password" Placeholder="Password" 
+                   IsPassword="True" PlaceholderColor="#B6BAB9" 
+                   Text="{Binding Password}"
+                   FontFamily="Roboto">
+            </Entry>
+
+            <Label Text="Forget password ?" Padding="210,0,0,50"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+            <Button
+                x:Name="MyLoginCommand"
+                Command="{Binding LoginCommand}"
+                Clicked="MyLoginCommand_Clicked"
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="#F6FCFB"
+                BackgroundColor="Orange"
+                BorderWidth="1.5"
+                CornerRadius="20"
+                FontFamily="Roboto"
+                FontAttributes="Bold"
+                Margin="20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
