@@ -1,0 +1,17 @@
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.csproj.AssemblyReference.cache
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\Views\CoachPage.xaml.g.cs
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.AssemblyInfoInputs.cache
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.AssemblyInfo.cs
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.csproj.CoreCompileInputs.cache
+C:\Mobile Development\App52\App52\App52\bin\Debug\netstandard2.0\App52.deps.json
+C:\Mobile Development\App52\App52\App52\bin\Debug\netstandard2.0\App52.dll
+C:\Mobile Development\App52\App52\App52\bin\Debug\netstandard2.0\ref\App52.dll
+C:\Mobile Development\App52\App52\App52\bin\Debug\netstandard2.0\App52.pdb
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.dll
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\ref\App52.dll
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\App52.pdb
+C:\Mobile Development\App52\App52\App52\obj\Debug\netstandard2.0\Views\ContinueRegesrtation.xaml.g.cs
