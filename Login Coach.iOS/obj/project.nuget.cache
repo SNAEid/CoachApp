@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NPiE+ZGo0LgvcJS+5kyNHtBy6IJui01/7Htay8/Hc5v/xUW5bMWDmmCqDf8TRTVYx97cVLxkv6omWoHes14jBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\citycomp\\source\\repos\\Login Coach\\Login Coach\\Login Coach.iOS\\Login Coach.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\citycomp\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\citycomp\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\citycomp\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
