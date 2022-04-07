@@ -1,22 +1,59 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
+using App52.Model;
+using App52.Services;
+using MvvmHelpers;
+using Firebase.Database;
 using Xamarin.Forms;
+using System.Collections.ObjectModel;
 
-namespace mycoachEpic2.Epic2ViewModels
+namespace App52.ModelView
 {
-    public class HomePageModelView : ContentPage
+    public class HomePageModelView : BaseViewModel
+
     {
+
+        public string Time { get; set; }
+        public string Date { get; set; }
+        
+        public int id { get; set; }
+        public string Title { get; set; }
+
+        private DBFirebase services;
+        public Command AddCoachesCommand { get; }
+
+        private ObservableCollection<HomePage> _coaches = new ObservableCollection<HomePage>();
+
+        public ObservableCollection<HomePage> Coaches
+        {
+            get { return _coaches; }
+            set
+            {
+                _coaches = value;
+                OnPropertyChanged();
+            }
+        }
+
         public HomePageModelView()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
-                }
-            };
+            services = new DBFirebase();
+            Coaches = services.getCoach();
+            AddCoachesCommand = new Command(async () => await AddCoachAsync(Time,Date,id,Title));
+        }
+        private async Task AddCoachAsync(string Time, string Date,int id,string title1)
+        {
+            await services.AddCoach(Time,Date,id,title1);
         }
     }
 }
+
+    
+
+        
+
+
+
+
+

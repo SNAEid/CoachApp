@@ -1,12 +1,144 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamarinFirbase.Views.HomePage">
+             xmlns:local="clr-namespace:App52.ModelView" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:combobox="clr-namespace:Xamarin.Forms.ComboBox;assembly=Xamarin.Forms.ComboBox"
+             x:Class="App52.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+          
+            <Label Text="Welcome to MyCoach"
+                   VerticalOptions="Start" 
+                   Margin="18,40"
+                   HorizontalOptions="Center" 
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   TextColor="Gray" />
+          
+
+            <Image Source="loy.png" Margin="0,10,280,0" ></Image>
+
+
+
+
+            <yummy:PancakeView CornerRadius="32,0,0,32" HeightRequest="60"     BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="1,0"     VerticalOptions="StartAndExpand"         Margin="50,0,8,0">
+
+                <yummy:PancakeView.BackgroundGradientStops>
+
+                    <yummy:GradientStopCollection>
+
+                        <yummy:GradientStop Color="#E65C1D" Offset="0" />
+
+
+                        <yummy:GradientStop Color="#EEAF16" Offset="1" />
+
+                    </yummy:GradientStopCollection>
+
+                </yummy:PancakeView.BackgroundGradientStops>
+
+                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="General description about program"  TextColor="White" FontSize="Medium" Margin="20" />
+                 
+            </yummy:PancakeView>
+            
+            
+            
+
+            
+            <StackLayout  Margin="20,30" >
+
+                <Label Text="Plan 3 Days" Margin="0,70,0,10"  VerticalOptions="Fill" HorizontalOptions="Start"   TextColor="Black"   FontSize="Medium"    ></Label>
+
+                <Button HeightRequest="20" HorizontalOptions="End"   BackgroundColor="White" ImageSource="calendaricon.png" Margin="0,-40,0,5"></Button>
+                
+            </StackLayout>
+
+            
+                
+
+            <ListView  Grid.Row="1" ItemsSource="{Binding Coaches}" Margin="55,30,50,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                            
+
+                            <StackLayout Orientation="Vertical">
+
+                               
+
+                                <Label Text="{Binding Date}" HorizontalOptions="Fill" BackgroundColor="Orange"  TextColor="Black"/>
+
+                                <StackLayout  Orientation="Horizontal" >
+                                    <RadioButton Content="{Binding Time}"  FontSize="Small" Margin="0,-8,0,0" HorizontalOptions="StartAndExpand"/>
+
+                                    <Label Text="{Binding Title}" TextColor="Black" FontSize="Small"  Margin="0,-2,0,0"  HorizontalOptions="EndAndExpand"  />
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+
+            <Frame Margin="0"  VerticalOptions="End" BackgroundColor="WhiteSmoke" HorizontalOptions="Fill">
+                <StackLayout  HorizontalOptions="Center" Orientation="Horizontal"  >
+                    <StackLayout Orientation="Vertical">
+                        <Button WidthRequest="40"  Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                                ImageSource="home.png"></Button>
+
+                        <Label FontAttributes="Bold" FontSize="Small"
+                               HorizontalOptions="Start"
+                               Margin="20,0"
+                               Text="Home"
+                               ></Label>
+                    </StackLayout>
+
+                    <StackLayout Padding="5,0" Orientation="Vertical">
+                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                                ImageSource="notify.png"></Button>
+                        <Label TextColor="Gray" FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0" FontSize="Small"
+                               Text="Notifi"></Label>
+                    </StackLayout>
+
+                    <StackLayout Padding="5,0" Orientation="Vertical">
+                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                                ImageSource="explore.png"></Button>
+                        <Label FontSize="11" FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0" TextColor="Gray"
+                               Text="Explore"></Label>
+                    </StackLayout>
+                    <StackLayout Padding="5,0" Orientation="Vertical">
+                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                                ImageSource="profile.png"></Button>
+                        <Label FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0" TextColor="Gray"
+                               Text="Profile"></Label>
+                    </StackLayout>
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+       
