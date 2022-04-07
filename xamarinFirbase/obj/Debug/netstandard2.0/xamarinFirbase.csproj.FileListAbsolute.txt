@@ -1,0 +1,16 @@
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\bin\Debug\netstandard2.0\xamarinFirbase.deps.json
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\bin\Debug\netstandard2.0\xamarinFirbase.dll
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\bin\Debug\netstandard2.0\ref\xamarinFirbase.dll
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\bin\Debug\netstandard2.0\xamarinFirbase.pdb
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.csproj.AssemblyReference.cache
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.AssemblyInfoInputs.cache
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.AssemblyInfo.cs
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.csproj.CoreCompileInputs.cache
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.dll
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\ref\xamarinFirbase.dll
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\xamarinFirbase.pdb
+C:\Users\msys\Desktop\timePicker\xamarinFirbase\xamarinFirbase\xamarinFirbase\obj\Debug\netstandard2.0\Views\CoachPage.xaml.g.cs
