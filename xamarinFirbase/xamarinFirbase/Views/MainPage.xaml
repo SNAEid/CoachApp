@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
+             xmlns:views="clr-namespace:Monthly_Calenar.Views"
+             xmlns:viewModel="clr-namespace:Monthly_Calenar.ModelViews"
+             mc:Ignorable="d"
+             x:Class="Monthly_Calenar.Views.MainPage"
+             Title="Monthly Calenar">
+    <ContentPage.BindingContext>
+        <viewModel:MonthlyCalendarViewModelPage />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="ic_add"
+            Command="{Binding AppointmentAddCommand}" 
+        />
+        <ToolbarItem
+            IconImageSource="ic_delete"
+            Command="{Binding AppointmentDeleteCommand}" 
+        />
+    </ContentPage.ToolbarItems>
+    <StackLayout
+        Padding="10">
+      <controls:Calendar
+            x:Name="calendar"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            AnimateCalendar="True"
+            Events="{Binding Events}"
+            SelectedDate="{Binding SelectedDate}"
+            SelectedDateColor="Red"
+            SelectedDateTextFormat="ddd, dd MMM yyyy"
+            SwipeUpToHideEnabled="False">
+          
+        <controls:Calendar.HeaderSectionTemplate>
+            <DataTemplate>
+                <views:CalendarHeaderView />
+            </DataTemplate>
+        </controls:Calendar.HeaderSectionTemplate>
+          
+        <controls:Calendar.FooterSectionTemplate>
+            <DataTemplate>
+                <views:CalendarFooterViewPage />
+            </DataTemplate>
+        </controls:Calendar.FooterSectionTemplate>
+          
+         <controls:Calendar.EventTemplate>
+            <DataTemplate>
+                <views:CalendarEventViewPage />
+            </DataTemplate>
+         </controls:Calendar.EventTemplate>
+          
+        <controls:Calendar.EmptyTemplate>
+           <DataTemplate>
+                    <StackLayout
+                        Padding="20,5">
+                        <Label
+                        Text="No Appointment for selected date"
+                        FontSize="14"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center" />
+                    </StackLayout>
+                </DataTemplate>
+            </controls:Calendar.EmptyTemplate>
+        </controls:Calendar>
+    </StackLayout>
+</ContentPage>
