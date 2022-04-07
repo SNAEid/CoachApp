@@ -12,7 +12,7 @@ namespace App52.Services
     {
         FirebaseClient client;
 
-        public DBFirebase()
+        public DBFirebaseHome()
         {
             client = new FirebaseClient("https://my-coach-9875d-default-rtdb.firebaseio.com/");
 
