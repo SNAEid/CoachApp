@@ -1,12 +1,13 @@
-﻿using System;
+using Firebase.Database;
+using Firebase.Database.Query;
+using ReadDB.Model;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
-using xamarinFirbase.Models;
-using Firebase.Database;
-using Firebase.Database.Query;
-namespace xamarinFirbase.services
+
+namespace ReadDB.Services
 {
     public class DBFirebase
     {
@@ -14,7 +15,7 @@ namespace xamarinFirbase.services
 
         public DBFirebase()
         {
-            client = new FirebaseClient("https://test499-2b0e7-default-rtdb.firebaseio.com/");
+            client = new FirebaseClient("https://my-coach-9875d-default-rtdb.firebaseio.com/");
 
         }
         public ObservableCollection<Coach> getCoach()
@@ -22,18 +23,15 @@ namespace xamarinFirbase.services
             var CoachData = client.Child("Coach").AsObservable<Coach>().AsObservableCollection();
             return CoachData;
         }
-
-       
-
-        public async Task AddCoach(string firstName,string lastName, TimeSpan saveTime, int age , string phone ,string password  )
+        public async Task AddCoach(string firstName, string lastName , string email , string course , string phone)
         {
-            Coach c=new Coach() {
-                FirstName= firstName, LastName = lastName,SaveTime = saveTime, Age = age , Phone = phone , Password = password 
-            };
+            Coach c = new Coach() { FistName = firstName, LastName = lastName, Email=email , Course=course , Phone=phone};
             await client.Child("Coach").PostAsync(c);
         }
 
-      
-
+        internal Task AddCoach(string firstName, string lastName, int age)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
