@@ -1,27 +1,18 @@
-﻿using System;
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Text;
-using System.Text.RegularExpressions;
-namespace xamarinFirbase.Models
 
+namespace ReadDB.Model
 {
-
-    public class Coach 
+    public class Coach
     {
-
-        public string FirstName { get; set; }
+        public string FistName { get; set; }
         public string LastName { get; set; }
-        public TimeSpan SaveTime { get; set; }
-
-        public int Age { get; set; }
         public string Phone { get; set; }
 
-        public string Password { get; set; }
-       
+        public string Email { get; set; }
+        public string Course { get; set; }
+
 
     }
-   
-
 }
