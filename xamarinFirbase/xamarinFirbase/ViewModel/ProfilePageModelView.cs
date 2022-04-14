@@ -1,22 +1,52 @@
-﻿using System;
+using MvvmHelpers;
+using MvvmHelpers.Commands;
+using ReadDB.Model;
+using ReadDB.Services;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 
-using Xamarin.Forms;
-
-namespace mycoachEpic2.Epic2ViewModels
+namespace ReadDB.ModelView
 {
-    public class ProfilePageModelView : ContentPage
+    public class CoachProfileModelView : BaseViewModel
+
     {
-        public ProfilePageModelView()
+
+        public string FistName { get; set; }
+        public string LastName { get; set; }
+        public string Phone { get; set; }
+
+        public string Email { get; set; }
+        public string Course { get; set; }
+
+
+        private DBFirebase services;
+        public Command AddCoachesCommand { get; }
+
+        private ObservableCollection<Coach> _coaches = new ObservableCollection<Coach>();
+
+        public ObservableCollection<Coach> Coaches
         {
-            Content = new StackLayout
+            get { return _coaches; }
+            set
             {
-                Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
-                }
-            };
+                _coaches = value;
+                OnPropertyChanged();
+            }
+        }
+
+       
+            public CoachProfileModelView()
+            {
+                services = new DBFirebase();
+                Coaches = services.getCoach();
+                AddCoachesCommand = new Command(async () => await AddCoachAsync(FistName, LastName, Email , Course , Phone));
+            }
+            private async Task AddCoachAsync(string firstName, string lastName, string email , string course , string phone )
+            {
+                await services.AddCoach(firstName, lastName,email , course , phone );
+            }
         }
     }
-}
