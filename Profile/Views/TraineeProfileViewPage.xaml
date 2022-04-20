@@ -45,50 +45,6 @@
 
             </Grid>
      
-            <Grid>
-
-                <ListView Grid.Row="1" ItemsSource="{Binding Times}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal">
-
-                                <Label Grid.Row="4" Grid.Column="0" Text="Date" FontSize="14" TextColor="Gray" FontAttributes="Bold" BackgroundColor="WhiteSmoke" Padding="13" HorizontalOptions="Start"></Label>
-
-                                <CheckBox Grid.Row="2" Grid.Column="1" Color="Orange" VerticalOptions="Center" CheckedChanged="OnCheckBoxCheckedChanged"/>
-                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding Date}" VerticalOptions="Center"/>
-
-                            </StackLayout>
-
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-            </Grid>
-
-            <StackLayout>
-                <Button
-                    Text=" More... " Clicked="More_Button_Clicked"
-                    x:Name="MoreButton"
-                    BackgroundColor="WhiteSmoke"
-                    TextColor="Orange"
-                    FontAttributes="Bold"
-                    FontFamily="Roboto"
-                ></Button>
-            </StackLayout>
-
-            <StackLayout>
-                <Button
-                    Text=" Join " Clicked="Join_Button_Clicked"
-                    x:Name="JoinButton"
-                    BackgroundColor="WhiteSmoke"
-                    TextColor="Orange"
-                    FontAttributes="Bold"
-                    FontFamily="Roboto"
-                ></Button>
-            </StackLayout>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
