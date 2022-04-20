@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input" 
+             xmlns:modelview="clr-namespace:Calenders.ModelView" x:DataType="modelview:DBModelView"
+             x:Class="Calenders.View.MonthlyCal">
+    <ContentPage.Content>
+        <Grid>
+
+        
+            
+            <telerikInput:RadCalendar 
+                x:Name="MonthlyCalendar"
+                ViewMode="MultiDay"
+                SchedulingUiEnabled="True"
+                AppointmentsSource="{Binding db}">
+
+           
+                <telerikInput:RadCalendar.MultiDayViewSettings>
+                    <telerikInput:MultiDayViewSettings VisibleDays="7"
+                DayStartTime="8:00:00"
+                DayEndTime="18:00:00"
+                TimelineInterval="1:00"
+                IsWeekendVisible="True"
+                IsCurrentTimeIndicatorVisible="true" />
+                </telerikInput:RadCalendar.MultiDayViewSettings>
+
+                <telerikInput:RadCalendar.MultiDayViewStyle>
+                    <telerikInput:MultiDayViewStyle
+                AllDayAreaBackgroundColor="Beige"
+                AllDayAppointmentBackgroundColor="CornflowerBlue"
+                AllDayAppointmentTextColor="White" 
+                CurrentTimeIndicatorColor="red"
+                AppointmentFontSize="11"
+                AllDayAppointmentFontSize="11" />
+                </telerikInput:RadCalendar.MultiDayViewStyle>
+            </telerikInput:RadCalendar>
+
+            <StackLayout>
+                <Label Text="{Binding Date}" FontSize="Medium" TextColor="Black"/>
+                <Label Text="{Binding StartTime1}" FontSize="Medium" TextColor="Black"/>
+                <Label Text="{Binding EndTime1}" FontSize="Medium" TextColor="Black"/>
+                <Label Text="{Binding id}" FontSize="Medium" TextColor="Black"/>
+                <Label Text="{Binding title1}" FontSize="Medium" TextColor="Black"/>
+            </StackLayout>
+            <!--
+              <StackLayout>
+                <Button x:Name="WeekView" Text="Week View" Clicked="WeekView_Clicked" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"></Button>
+            </StackLayout>
+            -->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
