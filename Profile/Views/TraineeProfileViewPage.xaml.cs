@@ -33,16 +33,6 @@ namespace Profile.Views
                 resultImage.Source = ImageSource.FromStream(() => stream);
             }
         }
-        void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-            // Perform required operation after examining e.Value
-        }
-
-        public void More_Button_Clicked(object sender, EventArgs e)
-        {
-        }
-        public void Join_Button_Clicked(object sender, EventArgs e)
-        {
-        }
+       
     }
 }
