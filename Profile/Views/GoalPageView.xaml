@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profile.Views.GoalPageView"
+             Title="Login Page">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Label Text="My Coach" Padding="0,0,0,100"
+                   HorizontalOptions="Center"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                   TextColor="#424949"
+                   FontSize="24"/>
+
+            <Label Text="What are your current goals?"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                    TextColor="#888480"
+                   Padding="70,0,0,30"
+                   FontSize="16"/>
+
+            <Button Text="Create Healthy Habits" x:Name="HealthyHabits"
+                    Clicked="HealthyHabits_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+            <Button Text="Build Muscle" x:Name="MuscleButton"
+                    Clicked="MuscleButton_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+            <Button Text="Loose Weight" x:Name="LooseWeightButton"
+                    Clicked="LooseWeightButton_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+            <Button Text="Improve Cardio" x:Name="CardioButton"
+                    Clicked="CardioButton_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+            <Button Text="Other" x:Name="OtherGoalButton"
+                    Clicked="OtherGoalButton_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+            <Button Text="Done" x:Name="Done"
+                    Clicked="Done_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

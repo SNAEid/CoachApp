@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profile.Views.MainLoginPage"
+             xmlns:local="clr-namespace:Profile"
+             Title="Login Page">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Label Text="My Coach" Padding="0,0,0,100"
+                   HorizontalOptions="Center"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                   TextColor="#424949"
+                   FontSize="24"/>
+            
+            <Label Text="Welcome gorgeous" HorizontalOptions="Center" 
+                   Padding="50,40,50,0"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+            <Label Text="We are so excited to work together" HorizontalOptions="Center" 
+                   Padding="50,20,50,30"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+            <Button Text="Login"
+                x:Name="LoginButton"
+                Clicked="MyButton_Clicked"
+                BackgroundColor="Orange"
+                TextColor="#F6FCFB"
+                BorderWidth="1.5"
+                CornerRadius="20"
+                HeightRequest="50"
+                FontFamily="Roboto"
+                FontAttributes="Bold"
+                Margin="20"/>
+            
+            <Button
+                x:Name="GoogleButton"
+                VerticalOptions="Center"
+                Text="Login with Google"
+                TextColor="#F6FCFB"
+                BackgroundColor="Orange"
+                BorderWidth="1.5"
+                CornerRadius="20"
+                FontFamily="Roboto"
+                FontAttributes="Bold"
+                Margin="20"/>
+
+            <Label Text="A new member? sign up" HorizontalOptions="End"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

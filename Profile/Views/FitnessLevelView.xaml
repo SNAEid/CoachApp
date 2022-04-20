@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profile.Views.FitnessLevelView"
+             Title="Login Page">
+    <ContentPage.Content>
+        <StackLayout Padding="40" x:Name="LayoutTest" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="My Coach" Padding="0,0,0,20"
+                   HorizontalOptions="Center"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                   TextColor="#424949"
+                   FontSize="24"/>
+            
+            <Label Text="Welcome Gorgeous!" Padding="80,0,0,20"
+                   TextColor="#EA8E19"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                   FontSize="20"/>
+            
+            <Label Text="Get started with few questions." Padding="60,0,0,0"
+                   TextColor="#888480"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                    FontSize="16"/>
+            
+            <Label Text="First, what is your current fitness level?" Padding="40,0,0,25"
+                   TextColor="#888480"
+                   FontFamily="Roboto"
+                   FontAttributes="Bold"
+                   FontSize="16"/>
+
+            <Button Text="New" x:Name="NewButton"
+                    Clicked="ChangeColor_Cliked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"
+                    BorderWidth="1.5"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+            
+            <Button Text="Beginner" x:Name="BeginnerButton"
+                    Clicked="ChangeColorBeginnerButton_Cliked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"
+                    BorderWidth="1.5"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+            
+            
+            <Button Text="Intermediate" x:Name="Intermediate"
+                    Clicked="ChangeColorIntermediate_Cliked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold" 
+                    BorderWidth="1.5"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+            
+            <Button Text="Advanced" x:Name="Advanced"
+                    Clicked="ChangeColorAdvanced_Cliked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"
+                    BorderWidth="1.5"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+            
+            <Button Text="Next" x:Name="Next"
+                    Clicked="Next_Clicked"
+                    TextColor="#F6FCFB"
+                    BackgroundColor="Orange"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"
+                    BorderWidth="1.5"
+                    CornerRadius="20"
+                    Margin="5"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Profile.ModelViews" x:DataType="local:TraineeProfileViewModelPage"
+             x:Class="Profile.Views.TraineeProfileViewPage"
+             Title="Coach Profile">
+
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="White" Padding="20">
+
+            <Grid>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Grid.Row="0" Grid.Column="0" x:Name="resultImage" Aspect="Fill"
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       HorizontalOptions="Center"
+                    />
+
+                    <Button Grid.Row="0" Grid.Column="3" Text="Pick Image" 
+                            HeightRequest="50"
+                            WidthRequest="100"
+                            FontSize="12"
+                            Clicked ="Pick_ImageButton_Clicked"  
+                            HorizontalOptions="Center" 
+                            BackgroundColor="WhiteSmoke"
+                            TextColor="Orange"
+                            FontAttributes="Bold"
+                            FontFamily="Roboto"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="1">
+                    <Label Grid.Column="1" Text="user name" FontSize="18" TextColor="Gray" FontAttributes="Bold"  BackgroundColor="WhiteSmoke" Padding="13"></Label>
+                    <Label Grid.Column="2" Text="{Binding UserName}"></Label>
+                    <Label Grid.Row="2" Text="Email" FontSize="18" TextColor="Gray" FontAttributes="Bold" BackgroundColor="WhiteSmoke" Padding="13"></Label>
+                    <Label Grid.Row="2" Text="{Binding Email}"></Label>
+                    <Label Grid.Row="3" Text="Phone Number" FontSize="18" TextColor="Gray" FontAttributes="Bold" BackgroundColor="WhiteSmoke" Padding="13"></Label>
+                    <Label Grid.Row="3" Text="{Binding Phone}" TextColor="Black"></Label>
+                    <Label Grid.Row="4" Text="Location" FontSize="18" TextColor="Gray" FontAttributes="Bold" BackgroundColor="WhiteSmoke" Padding="13"></Label>
+                    <Label Grid.Row="4" Text="{Binding Location}" TextColor="Black"></Label>
+
+                </StackLayout>
+
+            </Grid>
+     
+            <Grid>
+
+                <ListView Grid.Row="1" ItemsSource="{Binding Times}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+
+                                <Label Grid.Row="4" Grid.Column="0" Text="Date" FontSize="14" TextColor="Gray" FontAttributes="Bold" BackgroundColor="WhiteSmoke" Padding="13" HorizontalOptions="Start"></Label>
+
+                                <CheckBox Grid.Row="2" Grid.Column="1" Color="Orange" VerticalOptions="Center" CheckedChanged="OnCheckBoxCheckedChanged"/>
+                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding Date}" VerticalOptions="Center"/>
+
+                            </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+
+            <StackLayout>
+                <Button
+                    Text=" More... " Clicked="More_Button_Clicked"
+                    x:Name="MoreButton"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Orange"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                ></Button>
+            </StackLayout>
+
+            <StackLayout>
+                <Button
+                    Text=" Join " Clicked="Join_Button_Clicked"
+                    x:Name="JoinButton"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Orange"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                ></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+            
