@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="explore.view.CoachDetails">
+    <ContentPage.Content>
+        <StackLayout      >
+
+
+
+
+
+            <yummy:PancakeView CornerRadius="0,0,500,500" HeightRequest="200"            >
+
+                <yummy:PancakeView.BackgroundGradientStops>
+
+                    <yummy:GradientStopCollection>
+
+                        <yummy:GradientStop Color="#8C9BF0" Offset="0" />
+
+
+                        <yummy:GradientStop Color="#F0EFED" Offset="1" />
+
+
+                    </yummy:GradientStopCollection>
+
+                </yummy:PancakeView.BackgroundGradientStops>
+                <StackLayout>
+
+                    <StackLayout >
+                        <Frame CornerRadius="100"  Margin="0,5,0,0"
+                                                              BackgroundColor="#8C9BF0"
+                                                           HeightRequest="100"
+                                                           WidthRequest="100"
+                                                           HorizontalOptions="CenterAndExpand"
+                                                           Padding="0"
+                                                           IsClippedToBounds="True"
+                                                           >
+                            <Image Source="person.jpeg" 
+                                                            HorizontalOptions="Center"
+                                                            VerticalOptions="Center" />
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label x:Name="firsnameshow" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label x:Name="lasnameshow" HorizontalTextAlignment="Center"   TextColor="Black" FontSize="Medium" FontAttributes="Bold"        ></Label>
+
+
+
+                    </StackLayout>
+                </StackLayout>
+
+            </yummy:PancakeView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="10" Grid.Row="0" Grid.Column="0">
+                <StackLayout Margin="0,10" Orientation="Horizontal" >
+
+                    <Frame CornerRadius="100" 
+                           BackgroundColor="#8C9BF0"
+                    HeightRequest="25"
+                    WidthRequest="25"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                   IsClippedToBounds="True">
+
+                        <Image Source="course.png" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </Frame>
+                    <Label x:Name="courseshow"    TextColor="Black" FontAttributes="Bold"  FontSize="Medium" Margin="25,0,25,0" HorizontalOptions="Center" ></Label>
+                </StackLayout>
+
+
+
+
+
+
+                <StackLayout Margin="0,10" Orientation="Horizontal"  >
+
+                    <Frame CornerRadius="100" 
+                    HeightRequest="25"
+                    WidthRequest="25"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                    BackgroundColor="#8C9BF0"
+     
+                   IsClippedToBounds="True">
+                        
+                    <Image Source="location.png" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </Frame>
+                    <Label x:Name="locationshow" FontSize="Medium"   TextColor="Black" FontAttributes="Bold"  Margin="25,0,25,0"   ></Label>
+                </StackLayout>
+
+
+
+
+                <StackLayout Margin="0,10" Orientation="Horizontal"    >
+
+                    <Frame CornerRadius="100" 
+                    HeightRequest="25"
+                    WidthRequest="25"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                    BackgroundColor="#8C9BF0"
+     
+                   IsClippedToBounds="True">
+
+                        <Image Source="phone.png" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </Frame>
+                    <Label x:Name="phonenumbershow" TextColor="Black" FontAttributes="Bold" FontSize="Medium"   Margin="25,0,25,0"      ></Label>
+                </StackLayout>
+
+
+                <StackLayout Margin="0,10"   Orientation="Horizontal"       >
+
+                    <Frame CornerRadius="100" 
+                    HeightRequest="25"
+                    WidthRequest="25"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                    BackgroundColor="#8C9BF0"
+   
+                   IsClippedToBounds="True">
+
+                        <Image Source="email.png" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </Frame>
+                    <Label x:Name="emailshow"   TextColor="Black" FontAttributes="Bold"  FontSize="Medium"  Margin="25,0,0,0"  ></Label>
+                </StackLayout>
+
+
+
+
+
+
+                <StackLayout Margin="0,10"   Orientation="Horizontal"       >
+
+                    <Frame CornerRadius="100" 
+                    HeightRequest="25"
+                    WidthRequest="25"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                    BackgroundColor="#8C9BF0"
+   
+                   IsClippedToBounds="True">
+
+                        <Image Source="description.png" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </Frame>
+                    <Label x:Name="idshow"   TextColor="Black" FontAttributes="Bold"  FontSize="Medium"  Margin="25,0,0,0"  ></Label>
+                </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+
+               
+
+
+
+
+
+                <!--_____________________________-->
+
+                <StackLayout Margin="0,20" Orientation="Horizontal">
+
+                    <Label  Text="See Dates"
+                            FontAttributes="Bold" FontSize="Large"   />
+
+                    <ImageButton Source="arrow.png"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Clicked="dateView_Clicked"/>
+
+
+                   
+                </StackLayout>
+
+
+                
+
+                
+                
+                
+                <Button Text="Join"   FontAttributes="Bold" FontSize="Medium"     Margin="5,55,20,0" CornerRadius="20" BackgroundColor="#F7E7C1"></Button>
+
+
+
+
+            </StackLayout>
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
