@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirebaseApp.Views.RegisterUser">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="regester coach!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" FontSize="Large"/>
+
+
+
+            <Frame   BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="20">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="WhiteSmoke" HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="5">
+                        <Image Source="profile1.png" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+
+                    <Entry Text="{Binding FirstName}" Placeholder="First Name"  TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"></Entry>
+                </StackLayout>
+            </Frame>
+
+            <Entry x:Name="TxtName"
+                   Placeholder="name"></Entry>
+
+            <Entry x:Name="TxtEmail"
+                   Placeholder="Email"></Entry>
+
+            <Entry x:Name="TxtPassword"
+                   IsPassword="True"
+                   Placeholder="Password"></Entry>
+
+            <Entry x:Name="TxtConfirmPass"
+                   IsPassword="True"
+                   Placeholder="Re-type Password"></Entry>
+
+            <Button Text="Regester" x:Name="ButtonRegister"
+                    Clicked="ButtonRegister_Clicked"
+                    Command="{Binding AddCoachesCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
