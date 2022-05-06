@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinFirebaseApp.Services;
 using XamarinFirebaseApp.Views;
+using XamarinFirebaseApp.Views.CalenderView;
 
 namespace XamarinFirebaseApp.Views
 {
@@ -55,7 +56,7 @@ namespace XamarinFirebaseApp.Views
 
         private void Profile_Clicked_1(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new AddAppointment());
+            App.Current.MainPage = new NavigationPage(new WeeklyCal());
 
         }
 

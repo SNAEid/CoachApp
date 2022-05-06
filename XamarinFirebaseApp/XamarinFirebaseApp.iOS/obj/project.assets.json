@@ -9949,11 +9949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
       "projectName": "XamarinFirebaseApp.iOS",
-      "projectPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
+      "projectPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
       "packagesPath": "C:\\Users\\msys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -9971,8 +9971,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj": {
-              "projectPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj"
+            "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj": {
+              "projectPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj"
             }
           }
         }

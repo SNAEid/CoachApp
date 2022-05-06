@@ -236,13 +236,13 @@
                         <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
                                 HeightRequest="40"
                                 HorizontalOptions="Start" BackgroundColor="Transparent"
-                                ImageSource="profile.png"
+                                ImageSource="baseline_edit_calendar_black_36.png"
                                 Clicked="Profile_Clicked_1"></Button>
                         <Label FontSize="13"
                                FontAttributes="Bold"
                                HorizontalOptions="Start"
                                Margin="20,0" TextColor="Gray"
-                               Text="Profile"></Label>
+                               Text="Calendar"></Label>
                     </StackLayout>
 
 

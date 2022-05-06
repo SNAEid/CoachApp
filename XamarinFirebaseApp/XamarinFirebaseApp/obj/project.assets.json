@@ -7407,11 +7407,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
+      "projectUniqueName": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
       "projectName": "XamarinFirebaseApp",
-      "projectPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
+      "projectPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
       "packagesPath": "C:\\Users\\msys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\obj\\",
+      "outputPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\msys\\AppData\\Roaming\\NuGet\\NuGet.Config",

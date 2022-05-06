@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KkHnQzKs/GnQRZD1cy6nqlZC7mEyXRLqeMUd82O0ff0iV2hFEKyvzO2hF65LfqKVm1xW4c6IPxUnSsY/5NSMmQ==",
+  "dgSpecHash": "bYiHXVJ02+HufBnjDfwO6CaSxousFRk255EKlpf6rD/qgnNl5RJ38i2O78N3TrF7tVIKcf+TSNq8e6Zix7DJ+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.iOS\\XamarinFirebaseApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msys\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\msys\\.nuget\\packages\\btprogresshud\\1.3.5\\btprogresshud.1.3.5.nupkg.sha512",

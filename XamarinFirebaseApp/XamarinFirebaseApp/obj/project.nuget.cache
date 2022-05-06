@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CSIJHe1qQeG1SeG6TtfJZK1AhUJLIai/6QobiQO0dPaB05mB+n+P1xlNKmY5M8/5+wsFG2e5hLBqYjOdB2WSbA==",
+  "dgSpecHash": "gQzoU1l6argDCvmkzzGOYh7WoPUuOY03sflvXAng+2lf1jWjb4Hp/K3GxasSixtkrp7FIncorLEoP6PpU9s8/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
+  "projectFilePath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msys\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\msys\\.nuget\\packages\\dynamicdata\\7.6.7\\dynamicdata.7.6.7.nupkg.sha512",

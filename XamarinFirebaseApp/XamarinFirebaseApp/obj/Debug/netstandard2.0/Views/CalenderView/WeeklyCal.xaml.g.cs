@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("XamarinFirebaseApp.Views.CalenderView.WeeklyCal.xaml", "Views/CalenderView/WeeklyCal.xaml", typeof(global::App1.View.WeeklyCal))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("XamarinFirebaseApp.Views.CalenderView.WeeklyCal.xaml", "Views/CalenderView/WeeklyCal.xaml", typeof(global::XamarinFirebaseApp.Views.CalenderView.WeeklyCal))]
 
-namespace App1.View {
+namespace XamarinFirebaseApp.Views.CalenderView {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\CalenderView\\WeeklyCal.xaml")]

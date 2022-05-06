@@ -8598,11 +8598,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
       "projectName": "XamarinFirebaseApp.Android",
-      "projectPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
+      "projectPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
       "packagesPath": "C:\\Users\\msys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -8620,8 +8620,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj": {
-              "projectPath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj"
+            "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj": {
+              "projectPath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.csproj"
             }
           }
         }

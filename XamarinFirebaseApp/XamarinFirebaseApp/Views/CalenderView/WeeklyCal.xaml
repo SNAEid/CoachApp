@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input" 
-             xmlns:modelview="clr-namespace:App1.ModelView" 
+             xmlns:modelview="clr-namespace:XamarinFirebaseApp.ModelView" 
              xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
-             x:DataType="modelview:DBModelView"
-             x:Class="App1.View.WeeklyCal">
+             x:Class="XamarinFirebaseApp.Views.CalenderView.WeeklyCal">
     <ContentPage.Content>
         <ContentView>
         

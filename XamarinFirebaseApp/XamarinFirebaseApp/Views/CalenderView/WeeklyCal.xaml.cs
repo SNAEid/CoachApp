@@ -1,4 +1,4 @@
-﻿using App1.ModelView;
+﻿using XamarinFirebaseApp.ModelView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 using Telerik.XamarinForms.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFirebaseApp.View.CalenderView;
 
-namespace App1.View
+namespace XamarinFirebaseApp.Views.CalenderView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WeeklyCal : ContentPage

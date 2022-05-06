@@ -1,8 +1,8 @@
-﻿using App1.View;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinFirebaseApp.Views;
+using XamarinFirebaseApp.Views.CalenderView;
 
 namespace XamarinFirebaseApp
 {
@@ -12,7 +12,7 @@ namespace XamarinFirebaseApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new WeeklyCal());
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

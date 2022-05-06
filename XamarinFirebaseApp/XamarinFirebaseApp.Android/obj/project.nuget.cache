@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rhID4trBU1iDMECOVeqFQT70nEFS5e22J+lafwrxnFpSL8V/mr2k+f/qNnufjYBti/TVeOfDXVrWCmLvQuh5+Q==",
+  "dgSpecHash": "l8abLCIkkvoYAcKEWejG3dQG+cLlU/Wcq6kdPAN2zQGBG3tFRY8CU3JvVK4sKW/lP7tb3SZhBQ+JAXbYn4TLDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msys\\Desktop\\Coach\\XamarinFirebaseApp\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\msys\\source\\repos\\CoachApp\\develop\\XamarinFirebaseApp\\XamarinFirebaseApp.Android\\XamarinFirebaseApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msys\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\msys\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",
