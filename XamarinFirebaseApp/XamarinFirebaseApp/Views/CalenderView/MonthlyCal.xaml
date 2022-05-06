@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input" 
+             xmlns:modelview="clr-namespace:XamarinFirebaseApp.ModelView" 
+             x:Class="XamarinFirebaseApp.View.CalenderView.MonthlyCal">
+    <ContentPage.Content>
+        <Grid>
+
+
+
+            <telerikInput:RadCalendar 
+                x:Name="MonthlyCalendar"
+                ViewMode="MultiDay"
+                SchedulingUiEnabled="True">
+
+
+
+                <telerikInput:RadCalendar.MultiDayViewSettings>
+                    <telerikInput:MultiDayViewSettings VisibleDays="7"
+                DayStartTime="8:00:00"
+                DayEndTime="18:00:00"
+                TimelineInterval="1:00"
+                IsWeekendVisible="True"
+                IsCurrentTimeIndicatorVisible="true" />
+                </telerikInput:RadCalendar.MultiDayViewSettings>
+
+                <telerikInput:RadCalendar.MultiDayViewStyle>
+                    <telerikInput:MultiDayViewStyle
+                AllDayAreaBackgroundColor="Beige"
+                AllDayAppointmentBackgroundColor="CornflowerBlue"
+                AllDayAppointmentTextColor="White" 
+                CurrentTimeIndicatorColor="red"
+                AppointmentFontSize="11"
+                AllDayAppointmentFontSize="11" />
+                </telerikInput:RadCalendar.MultiDayViewStyle>
+            </telerikInput:RadCalendar>
+
+
+           
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
