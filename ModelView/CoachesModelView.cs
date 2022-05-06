@@ -54,17 +54,13 @@ namespace XamarinFirebaseApp.ModelView
             Services = new DBFirebase();
             Coaches = Services.getCoaches();
             AddCoachesCommand = new Command(async () => await AddCoachesAsync(CoachId, FirstName, LastName , Email , Phone , Password , City , Course));
-            AddCoachIdCommand = new Command(async () => await AddCoachIdAsync(CoachId)) ; 
         }
         private async Task AddCoachesAsync(string coachId,  string firstName, string lastName, string email , string phone , string password , string city , string course)
         {
             await Services.AddCoaches( coachId, firstName, lastName, email ,phone, password , city , course);
         }
 
-        private async Task AddCoachIdAsync(string coachId)
-        {
-            await Services.AddCoachesId(coachId);
-        }
+       
 
     }
 }

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behavior="clr-namespace:XamarinFirebaseApp"
+             xmlns:local="clr-namespace:XamarinFirebaseApp.ModelView"    
+             xmlns:behavior1="clr-namespace:XamarinFirebaseApp.Views" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFirebaseApp.Views.AddAppointment"> 
+    
+    <ContentPage.Content>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition ></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+
+
+
+            <StackLayout Margin="20" Grid.Row="0" VerticalOptions="Start">
+                
+                <StackLayout Orientation="Horizontal" >
+
+
+                    <Label  Text="" FontAttributes="Bold" FontSize="Title" HorizontalTextAlignment="Center"></Label>
+                    <Button 
+                        Clicked="Onbtn_Clicked"
+                            Margin="275,20"
+                            BackgroundColor="DarkBlue"
+                            Text="Save"
+                        TextColor="White"
+                        
+                            CornerRadius="20"
+                            HeightRequest="40"
+                            WidthRequest="80"
+                            
+                                
+                            Command="{Binding AddTimeCommand}"/>
+                </StackLayout>
+
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Margin="10,0" Text="{Binding Title}" FontSize="30" Placeholder="Add Title .... "  FontAttributes="None" HorizontalOptions="FillAndExpand" ></Entry>
+                    </StackLayout>
+
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label FontSize="20" Margin="10,30" Text="Select Date " ></Label>
+                        <DatePicker  TextColor="LightCoral"
+                            FontSize="20"  Margin="50,0" x:Name="datePicker" 
+                            Date="{Binding Date , Mode=TwoWay}"
+                            MinimumDate="4/4/2022"
+                            MaximumDate="12/31/2030" 
+                            />
+                    </StackLayout>
+
+
+                    <BoxView Margin="0,20" Color="Gray" HorizontalOptions="Fill"  HeightRequest="1"></BoxView>
+
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label FontSize="20" Margin="10,30" Text="Start Time " ></Label>
+
+                        <TimePicker
+                            Margin="50,0"
+                            FontSize="20" TextColor="LightCoral"
+                            Time="{Binding StartTime , Mode=TwoWay}"/>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label FontSize="20" Margin="10,30" Text="End Time " ></Label>
+
+                        <TimePicker
+                            Margin="50,0"
+                            FontSize="20" TextColor="LightCoral"
+                            Time="{Binding EndTime , Mode=TwoWay}"/>
+
+                    </StackLayout>
+                    <BoxView Margin="0,20" Color="Gray" HorizontalOptions="Fill"  HeightRequest="1"></BoxView>
+
+
+
+
+
+
+
+
+
+                </StackLayout>
+
+
+            </StackLayout>
+            
+
+
+            <Frame Margin="0"  VerticalOptions="End" BackgroundColor="Transparent" HorizontalOptions="Fill">
+                <StackLayout  HorizontalOptions="Center" Orientation="Horizontal"  >
+                    <StackLayout Orientation="Vertical">
+                        <Button WidthRequest="40"  Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                Clicked="ButtonHome_Clicked"
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
+                                ImageSource="home.png"></Button>
+
+                        <Label FontAttributes="Bold" FontSize="Small"
+                               HorizontalOptions="Start"
+                               Margin="20,0"
+                               Text="Home"
+                               ></Label>
+                    </StackLayout>
+
+
+
+                    <StackLayout Padding="5,0" Orientation="Vertical">
+                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
+                                ImageSource="explore.png"
+                                Clicked="Explore_Clicked"></Button>
+                        <Label FontSize="11" FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0" TextColor="Gray"
+                               Text="Explore"></Label>
+                    </StackLayout>
+                    <StackLayout Padding="5,0" Orientation="Vertical">
+                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
+                                HeightRequest="40"
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
+                                ImageSource="profile.png"
+                                Clicked="Profile_Clicked_1"></Button>
+                        <Label FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0" TextColor="Gray"
+                               Text="Profile"></Label>
+                    </StackLayout>
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+        </Grid>
+
+        
+            
+        </ContentPage.Content>
+
+        
+</ContentPage>

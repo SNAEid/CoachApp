@@ -1,25 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using Firebase.Auth;
-using Newtonsoft.Json;
-using Xamarin.Essentials;
-using Xamarin.Forms;
-using XamarinFirebaseApp;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using XamarinFirebaseApp.ModelView;
-using XamarinFirebaseApp.Views;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
+using Newtonsoft.Json;
+using Firebase.Auth;
 using XamarinFirebaseApp.Views.View;
 
-namespace XFFireBaseApp
+namespace XamarinFirebaseApp.Views
 {
-    public partial class MyDashboardPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AddAppointment : ContentPage
     {
         public string WebAPIkey = "AIzaSyDpJwmEi_i7lI2gDil8epd2AoPgUqiYfK4";
-        public MyDashboardPage()
-        {
+
+        public AddAppointment()
+        { 
             InitializeComponent();
-            BindingContext = new CoachesModelView() ; 
             GetProfileInformationAndRefreshToken();
+            BindingContext = new AddAppointmentVM();
         }
+
 
         async private void GetProfileInformationAndRefreshToken()
         {
@@ -32,12 +37,10 @@ namespace XFFireBaseApp
                 var RefreshedContent = await authProvider.RefreshAuthAsync(savedfirebaseauth);
                 Preferences.Set("MyFirebaseRefreshToken", JsonConvert.SerializeObject(RefreshedContent));
                 //Now lets grab user information
-                var UserId = savedfirebaseauth.User.LocalId ;
-                var UserEmail =  savedfirebaseauth.User.Email;
+                var UserId = savedfirebaseauth.User.LocalId;
 
 
                 await SecureStorage.SetAsync("UserId", UserId);
-                await SecureStorage.SetAsync("UserName", UserEmail);
 
 
 
@@ -45,21 +48,46 @@ namespace XFFireBaseApp
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await App.Current.MainPage.DisplayAlert("Alert", "Oh no !  Token expired", "OK");
+               
             }
 
 
 
         }
 
-        
-
-        private void Start_Clicked(object sender, EventArgs e)
+        private async void Onbtn_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new HomePageview());
+            
+        }
+
+        private void Home_Clicked(object sender, EventArgs e)
+        {
+
+            App.Current.MainPage = new NavigationPage(new WelcomPage());
 
         }
 
+        private void ButtonHome_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new HomePageview();
 
+
+        }
+
+        private void Profile_Clicked_1(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new AddAppointment());
+
+        }
+
+        private void Explore_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new SearchExplorePage());
+
+        }
     }
+
+   
+
+   
 }

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cardView="clr-namespace:CardView;assembly=CardView"
+             x:Class="XamarinFirebaseApp.Views.DatesPage">
+    
+    <ContentPage.Content>
+
+        <StackLayout>
+            
+
+
+            <ListView
+                
+           
+            x:Name="listView"
+            Margin="0,8,0,0"
+            HasUnevenRows="True"
+            ItemsSource="{Binding Coaches}"
+            SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+
+                            <StackLayout Padding="8,8,8,8" Orientation="Vertical">
+                                <cardView:CardView
+                                    
+                                BackgroundColor="white"
+                                 
+                                CardViewHasShadow="True"
+                                HeightRequest="220">
+                                    <cardView:CardView.CardViewContent>
+                                        <StackLayout
+                                        Padding="10"
+                                        HorizontalOptions="Center"
+                                        Spacing="10"
+                                        VerticalOptions="Center">
+
+
+
+
+                                            <Grid>
+
+
+
+
+
+
+                                                <Label
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Margin="15,0,0,0"
+                                                FontSize="Medium"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                                Text="{Binding Date}" />
+
+
+
+
+
+
+
+
+
+
+                                            </Grid>
+                                            <BoxView
+                                            HeightRequest="1"
+                                            WidthRequest="275"
+                                            Color="LightGray" />
+                                            <Grid>
+                                                <StackLayout Orientation="Vertical" >
+
+
+
+                                                    <Label
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Margin="15,0,0,0"
+                                                FontSize="Medium"
+                                                Text="{Binding time1}" />
+
+
+
+                                                    <Label
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                Margin="15,0,0,0"
+                                                FontSize="Medium"
+                                                
+                                                Text="{Binding  time2 }" />
+
+                                                    <Label
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                Margin="15,0,0,0"
+                                                FontSize="Medium"
+                                               
+                                                Text="{Binding  time3 }" />
+
+                                                </StackLayout>
+
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </cardView:CardView.CardViewContent>
+                                </cardView:CardView>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

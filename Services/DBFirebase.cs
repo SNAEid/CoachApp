@@ -29,30 +29,7 @@ namespace XamarinFirebaseApp.Services
 
 
         private static string GetUserId { get; set; }
-        public async Task AddCoachesId(string coachId)
-        {
-            try
-            {
-                var oauthToken = await SecureStorage.GetAsync("UserId");
-                GetUserId = oauthToken;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-
-            Coach c = new Coach()
-            {
-                CoachId = GetUserId
-
-
-            };
-            await client.Child("Coach").PostAsync(c);
-        }
-
-
-
+        
 
 
         public async Task AddCoaches(string coachId, string firstName,string lastName, string email , string phone ,string password ,string city , string course)
@@ -71,11 +48,10 @@ namespace XamarinFirebaseApp.Services
             Coach c =new Coach() {
                 CoachId = GetUserId , 
               FirstName= firstName, LastName = lastName,Email = email, Phone = phone , Password = password , City = city , Course = course
-            };
-            await client.Child("Coach").PostAsync(c);
-        }
-
-        
-
+            };await client.Child("Coach").PostAsync(c);
     }
+
+
+
+}
 }

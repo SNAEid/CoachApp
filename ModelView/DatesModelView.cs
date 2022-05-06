@@ -17,10 +17,8 @@ using XamarinFirebaseApp.Models;
 
 namespace XamarinFirebaseApp.ModelView
 {
-    public class HomePageModelView : BaseViewModel
-
+    internal class DatesModelView
     {
-
         public Guid AppointmentId { get; set; }
         public string IdCoach { get; set; }
 
@@ -37,7 +35,7 @@ namespace XamarinFirebaseApp.ModelView
 
 
 
-        private HomePageServices services;
+        private HomePageServices Services;
         public Command AddCoachesCommand { get; }
 
         private ObservableCollection<TDate> _coaches = new ObservableCollection<TDate>();
@@ -48,36 +46,30 @@ namespace XamarinFirebaseApp.ModelView
         {
             get
             {
+
+
                 return _coaches;
             }
             set
             {
                 _coaches = value;
-                OnPropertyChanged();
+               // OnPropertyChanged();
             }
         }
 
 
 
-        public HomePageModelView()
+        public DatesModelView()
         {
             Initialize();
-          
+
 
         }
         public async Task Initialize()
         {
-            services = new HomePageServices();
-            Coaches = services.getCoach();
+            Services = new HomePageServices();
+            Coaches = Services.getCoach();
         }
     }
-    }
 
-    
-
-        
-
-
-
-
-
+}

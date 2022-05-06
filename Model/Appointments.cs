@@ -7,6 +7,8 @@ namespace XamarinFirebaseApp.Models
     internal class Appointments
     {
         public Guid CoachId { get; set; }
+        public string TimeLocalId { get; set; }
+
 
         public string Title { get; set; }
         public TimeSpan SaveTime { get; set; }

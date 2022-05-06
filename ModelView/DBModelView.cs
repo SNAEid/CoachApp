@@ -18,7 +18,7 @@ namespace App1.ModelView
         public int id { get; set; }
         public string title1 { get; set; }
 
-        private DB services;
+        private DB1 services;
         public Command AddTimeCommand { get; }
 
         private ObservableCollection<DBModel> DataBase = new ObservableCollection<DBModel>();
@@ -37,7 +37,7 @@ namespace App1.ModelView
         }
         public DBModelView()
         {
-            services = new DB();
+            services = new DB1();
             db = services.getTime();
             AddTimeCommand = new Command( async () => await AddTimeAsync (Date , EndTime1 , StartTime1 , id , title1));
         }

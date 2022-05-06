@@ -14,7 +14,7 @@
                    VerticalOptions="Start" 
                    Margin="18,40"
                    HorizontalOptions="Center" 
-                   FontSize="Medium"
+                   FontSize="Large"
                    FontAttributes="Bold"
                    TextColor="Gray" />
 
@@ -51,7 +51,7 @@
 
                             <StackLayout Padding="8,8,8,8" Orientation="Vertical">
 
-                                <Frame CornerRadius="25" BackgroundColor="White"  HeightRequest="200"  Margin="30,0,30,0">
+                                <Frame CornerRadius="25" BackgroundColor="White"  HeightRequest="200"  Margin="20,0">
                                     <cardView:CardView
 
                                 BackgroundColor="White"
@@ -86,7 +86,7 @@
                                                 Grid.Row="0"
                                                 Grid.Column="0"
                                                 Margin="20,0,0,0"
-                                                FontSize="Medium"
+                                                FontSize="Title"
                                                 FontAttributes="Bold"     
                                                 TextColor="Black"
                                                         
@@ -123,35 +123,55 @@
                                                 Grid.Row="0"
                                                 Grid.Column="0"
                                                 Margin="15,0,0,0"
-                                                FontSize="Small"
-                                                                    TextColor="Black"
+                                                FontSize="Medium"
+                                                                    TextColor="Green"
                                                                     FontAttributes="Bold"
-                                                Text="{Binding CoachStartTime1}" />
+                                                Text="{Binding StartTime}" />
                                                             </StackLayout>
 
-
+                                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                FontSize="Medium"
+                                                         TextColor="Gray"
+                                                  FontAttributes="Bold"         
+                
+                                                HorizontalTextAlignment="Start"
+                                                Text="_" />
 
                                                             <Label
                                                 Grid.Row="0"
                                                 Grid.Column="1"
                                                 Margin="0,0,15,0"
-                                                FontSize="Small"
-                                                    TextColor="Black"
+                                                FontSize="Medium"
+                                                    TextColor="Green"
                                                                     FontAttributes="Bold"            
                                                 HorizontalTextAlignment="End"
-                                                Text="{Binding  CoachEndTime1 }" />
+                                                                
+                                                Text="{Binding  EndTime }" />
                                                  </StackLayout>
                                                         <StackLayout Orientation="Horizontal">
                                                             <Label
                                                 Grid.Row="0"
                                                 Grid.Column="1"
                                                 Margin="70,0,0,0"
-                                                FontSize="Small"
+                                                FontSize="Subtitle"
                                                          TextColor="Gray"
                                                   FontAttributes="Bold"         
                 
                                                 HorizontalTextAlignment="Start"
-                                                Text="{Binding CoachCourse  }" />
+                                                Text="{Binding Title  }" />
+
+                                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                FontSize="Subtitle"
+                                                         TextColor="Gray"
+                                                  FontAttributes="Bold"         
+                
+                                                HorizontalTextAlignment="Start"
+                                                Text="Course" />
+
 
                                                             <Label
                                                 Grid.Row="0"
@@ -161,145 +181,14 @@
                                                          TextColor="Gray"
                                                      FontAttributes="Bold"         
                                                 HorizontalTextAlignment="Start"
-                                                Text="{Binding TraineeName  }" />
+                                                Text="{Binding FirstName  }" />
 
                                                         </StackLayout>
 
 
-                                                        <StackLayout Orientation="Horizontal">
-                                                            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
-
-                                                                <Frame CornerRadius="100" 
-                                                           HeightRequest="25"
-                                                           WidthRequest="25"
-                                                           HorizontalOptions="Start"
-                                                           Padding="0"
-                                                           IsClippedToBounds="True"
-                                                           >
-
-                                                                    <Button ImageSource="pend.png" 
-                                                                Clicked="Button_Clicked"
-                                                               HorizontalOptions="Center"
-                                                               VerticalOptions="Center" />
-                                                                </Frame>
-
-
-                                                                <Label
-                                                Grid.Row="0"
-                                                Grid.Column="0"
-                                                Margin="15,0,0,0"
-                                                FontSize="Small"
-                                                FontAttributes="Bold"
-                                                                    TextColor="Black"
-                                                Text="{Binding CoachStartTime2}" />
-                                                            </StackLayout>
 
 
 
-                                                            <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="0,0,15,0"
-                                                FontSize="Small"
-                                                FontAttributes="Bold"
-                                                HorizontalTextAlignment="End"
-                                                                TextColor="Black"
-                                                Text="{Binding  CoachEndTime2 }" />
-</StackLayout>
-
-                                                        <StackLayout Orientation="Horizontal">
-                                                            <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="70,0,0,0"
-                                                FontSize="Small"
-                                                         TextColor="Gray"
-                                                         FontAttributes="Bold"         
-       
-                                                HorizontalTextAlignment="Start"
-                                                Text="{Binding CoachCourse2  }" />
-
-                                                            <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="70,0,0,0"
-                                                FontSize="Small"
-                                                         TextColor="Gray"
-                                                                                                   FontAttributes="Bold"         
-                        
-                                                HorizontalTextAlignment="Start"
-                                                Text="{Binding TraineeName2  }" />
-
-                                                        </StackLayout>
-
-
-                                                        <StackLayout   Orientation="Horizontal">
-                                                            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
-
-                                                                <Frame CornerRadius="100" 
-                                                           HeightRequest="25"
-                                                           WidthRequest="25"
-                                                           HorizontalOptions="Start"
-                                                           Padding="0"
-                                                           IsClippedToBounds="True"
-                                                           >
-
-                                                                    <Button ImageSource="pend.png" 
-                                                                Clicked="Button_Clicked"
-                                                               HorizontalOptions="Center"
-                                                               VerticalOptions="Center" />
-                                                                </Frame>
-
-
-                                                                <Label
-                                                Grid.Row="0"
-                                                Grid.Column="0"
-                                                Margin="15,0,0,0"
-                                                FontSize="Small"
-                                                FontAttributes="Bold"
-                                                                    TextColor="Black"
-                                                Text="{Binding CoachStartTime3}" />
-                                                            </StackLayout>
-
-
-
-                                                            <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="0,0,15,0"
-                                                FontSize="Small"
-                                                FontAttributes="Bold"
-                                                HorizontalTextAlignment="End"
-                                                                TextColor="Black"
-                                                Text="{Binding  CoachEndTime3 }" />
-                                                        </StackLayout>
-
-
-                                                        <StackLayout Orientation="Horizontal">
-                                                        <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="70,0,0,0"
-                                                FontSize="Small"
-                                                         TextColor="Gray"
-                                                                         
-                                                HorizontalTextAlignment="Start"
-                                                                                                                 FontAttributes="Bold"         
-
-                                                Text="{Binding CoachCourse3  }" />
-
-                                                        <Label
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="70,0,0,0"
-                                                FontSize="Small"
-                                                         TextColor="Gray"
-                                                                                                                            FontAttributes="Bold"         
-
-                                                HorizontalTextAlignment="Start"
-                                                Text="{Binding TraineeName3  }" />
-
-                                                    </StackLayout>
 
 
 
@@ -337,13 +226,13 @@
 
 
 
-            <Frame Margin="0"  VerticalOptions="End" BackgroundColor="WhiteSmoke" HorizontalOptions="Fill">
+            <Frame Margin="0"  VerticalOptions="End" BackgroundColor="Transparent" HorizontalOptions="Fill">
                 <StackLayout  HorizontalOptions="Center" Orientation="Horizontal"  >
                     <StackLayout Orientation="Vertical">
                         <Button WidthRequest="40"  Padding="0" Margin="20,0"
                                 HeightRequest="40"
                                 Clicked="ButtonHome_Clicked"
-                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
                                 ImageSource="home.png"></Button>
 
                         <Label FontAttributes="Bold" FontSize="Small"
@@ -353,22 +242,14 @@
                                ></Label>
                     </StackLayout>
 
-                    <StackLayout Padding="5,0" Orientation="Vertical">
-                        <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
-                                HeightRequest="40"
-                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
-                                ImageSource="notify.png"></Button>
-                        <Label TextColor="Gray" FontAttributes="Bold"
-                               HorizontalOptions="Start"
-                               Margin="20,0" FontSize="Small"
-                               Text="Notifi"></Label>
-                    </StackLayout>
+                    
 
                     <StackLayout Padding="5,0" Orientation="Vertical">
                         <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
                                 HeightRequest="40"
-                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
-                                ImageSource="explore.png"></Button>
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
+                                ImageSource="explore.png"
+                                Clicked="Explore_Clicked"></Button>
                         <Label FontSize="11" FontAttributes="Bold"
                                HorizontalOptions="Start"
                                Margin="20,0" TextColor="Gray"
@@ -377,8 +258,9 @@
                     <StackLayout Padding="5,0" Orientation="Vertical">
                         <Button WidthRequest="40" CornerRadius="30" Padding="0" Margin="20,0"
                                 HeightRequest="40"
-                                HorizontalOptions="Start" BackgroundColor="WhiteSmoke"
-                                ImageSource="profile.png"></Button>
+                                HorizontalOptions="Start" BackgroundColor="Transparent"
+                                ImageSource="profile.png"
+                                Clicked="Profile_Clicked_1"></Button>
                         <Label FontSize="13"
                                FontAttributes="Bold"
                                HorizontalOptions="Start"

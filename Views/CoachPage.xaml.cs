@@ -30,10 +30,24 @@ namespace XamarinFirebaseApp.Views
                 string name = TxtName.Text;
                 string email = TxtEmail.Text;
                 string password = TxtPassword.Text;
+                string city = TxtCity.Text;
+                string course = TxtCourse.Text;
+
+
                 string confirmPassword = TxtConfirmPass.Text;
               
 
                 if (string.IsNullOrEmpty(name))
+                {
+                    await DisplayAlert("Warning", "Please enter your name ", "Cancel");
+                    return;
+                }
+                if (string.IsNullOrEmpty(course))
+                {
+                    await DisplayAlert("Warning", "Please enter your name ", "Cancel");
+                    return;
+                }
+                if (string.IsNullOrEmpty(city))
                 {
                     await DisplayAlert("Warning", "Please enter your name ", "Cancel");
                     return;

@@ -12,7 +12,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinFirebaseApp.Model;
 using XamarinFirebaseApp.ModelView;
-using XamarinFirebaseApp.Views.Student;
+using XamarinFirebaseApp.Views;
 using XFFireBaseApp;
 
 namespace XamarinFirebaseApp.Views
