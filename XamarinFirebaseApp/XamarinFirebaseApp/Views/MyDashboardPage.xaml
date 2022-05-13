@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFFireBaseApp.MyDashboardPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome To MyCoach" FontSize="Header" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
+            <Label Text="to Continue Press Lets start" FontSize="Subtitle" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
+            <Button BackgroundColor="Orange"
+                            WidthRequest="200"
+                           
+                            BorderWidth="1.5"
+                            CornerRadius="20"
+                            FontAttributes="Bold"
+                            FontSize="Subtitle"
+                            Margin="0,10"
+                            x:Name="Start" Text="Let's Start"
+                            Clicked="Start_Clicked" 
+                           Command = "{Binding AddCoachIdCommand}"/>
+        </StackLayout>
+      
+            
+            
+        
+    </ContentPage.Content>
+</ContentPage>
